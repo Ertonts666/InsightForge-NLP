@@ -1,0 +1,64 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "text": "The new smartphone has an excellent camera and battery life, but the user interface is a bit confusing. Overall, I'm satisfied with my purchase.",
+      "language": "en",
+      "aspects": ["camera", "battery", "user interface"]
+    },
+    {
+      "id": 2,
+      "text": "El restaurante ofrece una comida deliciosa, aunque el servicio fue un poco lento. Los precios son razonables y el ambiente es agradable.",
+      "language": "es",
+      "aspects": ["comida", "servicio", "precios", "ambiente"]
+    },
+    {
+      "id": 3,
+      "text": "Le film était incroyable, avec des effets spéciaux impressionnants et une histoire captivante. Cependant, certaines scènes étaient trop longues.",
+      "language": "fr",
+      "aspects": ["effets spéciaux", "histoire", "scènes"]
+    },
+    {
+      "id": 4,
+      "text": "Das Hotel war sehr sauber und komfortabel. Das Personal war freundlich, aber das Frühstück war nicht so gut wie erwartet.",
+      "language": "de",
+      "aspects": ["sauber", "komfortabel", "Personal", "Frühstück"]
+    },
+    {
+      "id": 5,
+      "text": "这款笔记本电脑性能非常好，但价格有点贵。键盘打字很舒服，屏幕显示也很清晰。",
+      "language": "zh",
+      "aspects": ["性能", "价格", "键盘", "屏幕"]
+    },
+    {
+      "id": 6,
+      "text": "The online course was informative and well-structured. The instructor explained complex concepts clearly, but the assignments were too difficult. The support team was responsive when I had questions.",
+      "language": "en",
+      "aspects": ["content", "instructor", "assignments", "support"]
+    },
+    {
+      "id": 7,
+      "text": "I absolutely hated this product. It broke after just two weeks of use and customer service refused to help. Complete waste of money.",
+      "language": "en",
+      "aspects": ["durability", "customer service", "value"]
+    },
+    {
+      "id": 8,
+      "text": "La aplicación es muy útil y fácil de usar. Me encanta la interfaz y las funcionalidades que ofrece. Definitivamente la recomendaría a mis amigos.",
+      "language": "es",
+      "aspects": ["utilidad", "facilidad de uso", "interfaz", "funcionalidades"]
+    },
+    {
+      "id": 9,
+      "text": "Ce livre est fascinant et bien écrit. L'intrigue est captivante du début à la fin. Je n'ai pas pu le poser avant de l'avoir terminé.",
+      "language": "fr",
+      "aspects": ["écriture", "intrigue", "engagement"]
+    },
+    {
+      "id": 10,
+      "text": "Die Konferenz war sehr informativ, mit ausgezeichneten Rednern und interessanten Themen. Die Organisation hätte jedoch besser sein können.",
+      "language": "de",
+      "aspects": ["Informationsgehalt", "Redner", "Themen", "Organisation"]
+    }
+  ]
+}

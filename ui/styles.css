@@ -1,0 +1,149 @@
+/* Main Styles for NLP Insights Engine UI */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+.card-header i {
+    margin-right: 8px;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* Sentiment Analysis Results Styling */
+.sentiment-result {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.sentiment-positive {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-left: 4px solid #28a745;
+}
+
+.sentiment-negative {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-left: 4px solid #dc3545;
+}
+
+.sentiment-neutral {
+    background-color: rgba(108, 117, 125, 0.1);
+    border-left: 4px solid #6c757d;
+}
+
+.sentiment-score {
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.aspect-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Question Answering Results Styling */
+.answer-container {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(0, 123, 255, 0.05);
+    margin-bottom: 15px;
+}
+
+.answer-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.confidence-bar {
+    height: 8px;
+    border-radius: 4px;
+    margin: 10px 0;
+    background-color: #e9ecef;
+}
+
+.confidence-level {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #0d6efd;
+}
+
+.source-item {
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 123, 255, 0.05);
+    font-size: 0.9rem;
+}
+
+/* Loading Spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}

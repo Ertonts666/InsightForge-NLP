@@ -1,0 +1,94 @@
+{
+  "documents": [
+    {
+      "id": 1,
+      "text": "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science. He is best known to the general public for his mass–energy equivalence formula E = mc². He received the Nobel Prize in Physics in 1921 for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect, which was pivotal in establishing quantum theory.",
+      "metadata": {
+        "title": "Albert Einstein",
+        "category": "physics",
+        "source": "encyclopedia"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Machine learning is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence. Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so. Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition, and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.",
+      "metadata": {
+        "title": "Machine Learning",
+        "category": "computer science",
+        "source": "textbook"
+      }
+    },
+    {
+      "id": 3,
+      "text": "Natural Language Processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data. The goal is a computer capable of 'understanding' the contents of documents, including the contextual nuances of the language within them. The technology can then accurately extract information and insights contained in the documents as well as categorize and organize the documents themselves.",
+      "metadata": {
+        "title": "Natural Language Processing",
+        "category": "computer science",
+        "source": "research paper"
+      }
+    },
+    {
+      "id": 4,
+      "text": "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming.",
+      "metadata": {
+        "title": "Python Programming Language",
+        "category": "programming",
+        "source": "documentation"
+      }
+    },
+    {
+      "id": 5,
+      "text": "Transformers are a type of neural network architecture that have been gaining popularity, especially in the field of natural language processing. The transformer model was introduced in the paper 'Attention is All You Need' by Vaswani et al. in 2017. The key innovation of transformers is the self-attention mechanism, which allows the model to weigh the importance of different words in a sentence differently depending on the context. This has led to significant improvements in tasks such as machine translation, text summarization, and question answering.",
+      "metadata": {
+        "title": "Transformer Models",
+        "category": "deep learning",
+        "source": "research paper"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Climate change is a long-term change in the average weather patterns that have come to define Earth's local, regional and global climates. These changes have a broad range of observed effects that are synonymous with the term. Changes observed in Earth's climate since the early 20th century are primarily driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth's atmosphere, raising Earth's average surface temperature. These human-produced temperature increases are commonly referred to as global warming.",
+      "metadata": {
+        "title": "Climate Change",
+        "category": "environmental science",
+        "source": "scientific report"
+      }
+    },
+    {
+      "id": 7,
+      "text": "The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing global pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The novel virus was first identified in Wuhan, China, in December 2019. The World Health Organization declared a Public Health Emergency of International Concern on 30 January 2020, and later declared a pandemic on 11 March 2020. As of 2021, variants of the virus have emerged and become dominant in many countries, with the Delta, Alpha and Beta variants being the most virulent.",
+      "metadata": {
+        "title": "COVID-19 Pandemic",
+        "category": "medicine",
+        "source": "health organization"
+      }
+    },
+    {
+      "id": 8,
+      "text": "Renewable energy is energy that is collected from renewable resources, which are naturally replenished on a human timescale, such as sunlight, wind, rain, tides, waves, and geothermal heat. Renewable energy often provides energy in four important areas: electricity generation, air and water heating/cooling, transportation, and rural (off-grid) energy services. Based on REN21's 2017 report, renewables contributed 19.3% to humans' global energy consumption and 24.5% to their generation of electricity in 2015 and 2016, respectively.",
+      "metadata": {
+        "title": "Renewable Energy",
+        "category": "energy",
+        "source": "scientific journal"
+      }
+    },
+    {
+      "id": 9,
+      "text": "Blockchain is a growing list of records, called blocks, that are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. By design, a blockchain is resistant to modification of its data. This is because once recorded, the data in any given block cannot be altered retroactively without alteration of all subsequent blocks. For use as a distributed ledger, a blockchain is typically managed by a peer-to-peer network collectively adhering to a protocol for inter-node communication and validating new blocks. Although blockchain records are not unalterable, blockchains may be considered secure by design and exemplify a distributed computing system with high Byzantine fault tolerance.",
+      "metadata": {
+        "title": "Blockchain Technology",
+        "category": "computer science",
+        "source": "technical paper"
+      }
+    },
+    {
+      "id": 10,
+      "text": "The human brain is the central organ of the human nervous system, and with the spinal cord makes up the central nervous system. The brain consists of the cerebrum, the brainstem and the cerebellum. It controls most of the activities of the body, processing, integrating, and coordinating the information it receives from the sense organs, and making decisions as to the instructions sent to the rest of the body. The brain is contained in, and protected by, the skull bones of the head. The cerebrum is the largest part of the human brain. It is divided into two cerebral hemispheres. The cerebral cortex is an outer layer of grey matter, covering the core of white matter.",
+      "metadata": {
+        "title": "Human Brain",
+        "category": "neuroscience",
+        "source": "medical textbook"
+      }
+    }
+  ]
+}

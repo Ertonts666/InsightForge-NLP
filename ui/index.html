@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightForge-NLP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cpu"></i> InsightForge-NLP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-page="sentiment">Sentiment Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="qa">Question Answering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-page="about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Sentiment Analysis Page -->
+        <div class="page active" id="sentiment-page">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5><i class="bi bi-emoji-smile"></i> Multilingual Sentiment Analysis</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="sentiment-form">
+                                <div class="mb-3">
+                                    <label for="sentiment-text" class="form-label">Text to Analyze</label>
+                                    <textarea class="form-control" id="sentiment-text" rows="5" placeholder="Enter text to analyze sentiment..."></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sentiment-language" class="form-label">Language</label>
+                                    <select class="form-select" id="sentiment-language">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="multilingual">Multilingual (Auto-detect)</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sentiment-aspects" class="form-label">Aspects (Optional, comma separated)</label>
+                                    <input type="text" class="form-control" id="sentiment-aspects" placeholder="E.g., price, quality, service">
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-search"></i> Analyze Sentiment
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card" id="sentiment-results-card" style="display: none;">
+                        <div class="card-header bg-success text-white">
+                            <h5><i class="bi bi-graph-up"></i> Sentiment Analysis Results</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="sentiment-results">
+                                <!-- Results will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Answering Page -->
+        <div class="page" id="qa-page" style="display: none;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5><i class="bi bi-question-circle"></i> Question Answering System</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="qa-form">
+                                <div class="mb-3">
+                                    <label for="question-input" class="form-label">Your Question</label>
+                                    <input type="text" class="form-control" id="question-input" placeholder="Ask a question...">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="use-context">
+                                        <label class="form-check-label" for="use-context">
+                                            Provide specific context
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3" id="context-container" style="display: none;">
+                                    <label for="context-input" class="form-label">Context</label>
+                                    <textarea class="form-control" id="context-input" rows="5" placeholder="Enter specific context for the question..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-search"></i> Get Answer
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card" id="qa-results-card" style="display: none;">
+                        <div class="card-header bg-success text-white">
+                            <h5><i class="bi bi-chat-square-text"></i> Answer</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="qa-results">
+                                <!-- Results will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <h5><i class="bi bi-database"></i> Knowledge Base Management</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="document-form">
+                                <div class="mb-3">
+                                    <label for="document-text" class="form-label">Add Document to Knowledge Base</label>
+                                    <textarea class="form-control" id="document-text" rows="5" placeholder="Enter document text..."></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="document-title" class="form-label">Document Title</label>
+                                    <input type="text" class="form-control" id="document-title" placeholder="Enter document title">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="document-category" class="form-label">Category</label>
+                                    <input type="text" class="form-control" id="document-category" placeholder="Enter document category">
+                                </div>
+                                <button type="submit" class="btn btn-info">
+                                    <i class="bi bi-plus-circle"></i> Add to Knowledge Base
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div class="page" id="about-page" style="display: none;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5><i class="bi bi-info-circle"></i> About InsightForge-NLP</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4>InsightForge-NLP</h4>
+                            <p>A comprehensive Natural Language Processing system that combines multilingual sentiment analysis and question-answering capabilities with retrieval augmentation.</p>
+                            
+                            <h5>Features</h5>
+                            <ul>
+                                <li><strong>Multilingual Sentiment Analysis:</strong> Analyze sentiment in multiple languages with fine-grained scores and aspect-based analysis.</li>
+                                <li><strong>Question-Answering with Retrieval:</strong> Answer questions based on a knowledge base with document retrieval and relevance ranking.</li>
+                                <li><strong>Extensible Architecture:</strong> Modular design that can be extended with additional NLP capabilities.</li>
+                            </ul>
+                            
+                            <h5>Technologies</h5>
+                            <ul>
+                                <li><strong>Core ML/NLP:</strong> PyTorch, Hugging Face Transformers, spaCy</li>
+                                <li><strong>Vector Database:</strong> FAISS for efficient similarity search</li>
+                                <li><strong>API Framework:</strong> FastAPI with Pydantic</li>
+                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript with Bootstrap</li>
+                            </ul>
+                            
+                            <h5>GitHub Repository</h5>
+                            <p>View the source code and documentation on <a href="https://github.com/yourusername/nlp-insights-engine" target="_blank">GitHub</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">InsightForge-NLP &copy; 2025</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+# Core ML/NLP libraries
+torch>=1.9.0
+transformers>=4.18.0
+datasets>=2.0.0
+sentence-transformers>=2.2.0
+spacy>=3.2.0
+nltk>=3.6.5
+
+# Vector database
+faiss-cpu>=1.7.2  # Use faiss-gpu for GPU support
+
+# API and web framework
+fastapi>=0.78.0
+uvicorn>=0.17.6
+pydantic>=1.9.0
+
+# Data processing
+pandas>=1.3.5
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.5.1
+seaborn>=0.11.2
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Documentation
+mkdocs>=1.3.0
+mkdocs-material>=8.2.1
+
+# Utilities
+tqdm>=4.64.0
+python-dotenv>=0.20.0
